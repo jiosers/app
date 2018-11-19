@@ -1,7 +1,8 @@
 .wrapper{
     background:#fff;
     height:100vh;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden
 }
 .wrapper>.header{
     width: 100%;
