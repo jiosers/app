@@ -1,0 +1,183 @@
+.wrapper{
+    height:100vh;
+    overflow: hidden;
+}
+.wrapper>.header{
+    width: 100%;
+    height:12vw;
+    background-color: rgba(58,58,58,1);
+    position: relative;
+}
+.wrapper>.header>.title{
+    line-height:12vw;
+    width:100%;
+    font-size:4.8vw;
+    font-weight:bold;
+    text-align: center;
+    color:rgba(255,255,255,1);
+}
+.wrapper>.header>a{
+    position: absolute;
+    top:50%;
+    margin-top:-2.6vw;
+    width:100%;
+    padding-left: 5vw;
+}
+.wrapper>.header>a>img{
+    width:2vw;
+    height:4.8vw;
+}
+
+.wrapper>.container>.attention{
+    height: 13vw;
+    font-size:3.2vw;
+    line-height: 13vw;
+    padding-left: 3vw;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    background:rgba(247,246,252,1);
+}
+.wrapper>.container>.imput-form{
+    display: flex;
+    font-size:3.2vw;
+    height: 13vw;
+    align-items: center;
+    background:rgba(255,255,255,1);
+}
+.wrapper>.container>.imput-form>span{
+    width: 20vw;
+    font-size:14px;
+    font-weight:500;
+    color:rgba(54,54,54,1);
+    text-align: left;
+    padding-left: 3vw;
+}
+.wrapper>.container>.imput-form>input{
+    flex-grow: 1;
+    height: 13vw;
+    background:rgba(255,255,255,1);
+    border: none;
+    box-sizing: border-box;
+    outline: none
+}
+.wrapper>.container>.imput-form>button{
+    height: 13vw;
+    border: none;
+    outline: none;
+    font-size:14px;
+    border-left:1px solid rgba(227,227,227,1);
+    padding:0 15px;
+    font-weight:500;
+    color:rgba(25,156,251,1);
+    background:rgba(255,255,255,1);
+}
+.process{
+    display: flex;
+    justify-content: space-around
+}
+.process>li.item{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center
+}
+.process>li.item>img{
+    width:7.2vw;
+    height:7.2vw;
+}
+.process>li.item>span{
+    font-size:2.5vw;
+    font-weight:500;
+    color:rgba(164,164,164,1);
+}
+.wrapper>.container>.explain{
+    padding-left:3vw;
+    font-size:3.2vw;
+}
+.wrapper>.container>.explain>button{
+    height: 13vw;
+    border: none;
+    outline: none;
+    font-size:3.2vw;
+    font-weight:500;
+    color:rgba(25,156,251,1);
+    background:transparent;
+}
+.container>.queding{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    font-size:14px;
+    width:345px;
+    height:50px;
+    border-radius:25px;
+    border: none;
+    outline: none;
+    color:#fff; 
+    background:rgba(229,229,237,1);
+}
+.container>.footer{
+    font-size: 3.2vw;
+    line-height:56px;
+    color:#999999;
+    text-align:center;
+}
+.container>.footer-name{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    color:#A4A4A4;
+    font-size:12px;
+    line-height:40px;
+    text-align:center;
+}
+
+.modal{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+}
+.modal>.tip{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-150px;
+    margin-top:-90px;
+    width:300px;
+    height:180px;
+    background:rgba(255,255,255,1);
+    border-radius:5px;
+}
+.modal>.tip>.header{
+    text-align:center;
+    font-size:17px;
+    padding:20px 0;
+}
+.modal>.tip>.content{
+    width:80%;
+    margin:0 auto;
+    font-size:14px;
+    line-height:28px;
+    text-align:center;
+}
+.modal>.tip>.btn{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    display:flex;
+    font-size:14px;
+}
+.modal>.tip>.btn>button{
+    width:50%;
+    line-height:45px;
+    border:none;
+    background:none;
+    border-top:1px solid #E3E3E3;
+}
+.modal>.tip>.btn>button:first-of-type{
+    border-right:1px solid #E3E3E3;
+}

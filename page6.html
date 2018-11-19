@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/6.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="./page5.html">
+                <img src="img/2-return.png" alt="返回">
+            </a>
+            <div class="title">填写返现银行卡</div>
+        </div>
+        <div class="container">
+            <div class="attention">
+                <div class="tip-title">添加收款银行卡</div>
+                <div class="imput-form first">
+                    <ul class="form-item">
+                        <li>
+                            <span>持卡人</span>
+                            <span>**景</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="imput-form tips">
+                    <ul class="form-item">
+                        <li>
+                            <span>银行卡号</span>
+                            <span>
+                                <input placeholder="请输入银行卡号" id="sfz">
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="tip-item">
+                        <span class="zhanwei"></span>
+                        <span class="icon"></span>
+                        <span>&nbsp;
+                            <a href="">仅支持储蓄卡</a>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="tip-item">
+                    <span class="zhanwei"></span>
+                    <span class="icon"></span>
+                    <span>&nbsp;本人已阅读并同意
+                        <a href="">《快易买第三方协议》</a>
+                    </span>
+                </div>
+                <button class="queding">下一步</button>
+                <div>注册流程</div>
+                <div class="process">
+                    <!-- <li class="item">
+                        <img src="img/身份信息-选中1_03.png" alt="">
+                        <span>
+                            <a href="">绑定银行卡</a>
+                        </span>
+                    </li>
+                    <li class="item arrow arrow-first"></li>
+                    <li class="item">
+                        <img src="img/身份确认-选中_03.png" alt="">
+                        <span>
+                            <a href="">录入身份证</a>
+                        </span>
+                    </li>
+                    <li class="item arrow arrow-first"></li> -->
+                    <li class="item">
+                        <img src="img/返现银行卡-选中_03.png" alt="">
+                        <span>
+                            <a href="">身份确认</a>
+                        </span>
+                    </li>
+                    <li class="item arrow arrow-first"></li>
+                    <li class="item">
+                        <img src="img/2-reappearance.png" alt="">
+                        <span>返现银行卡</span>
+                    </li>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        var queding = document.querySelector(".queding");
+        queding.onclick = function () {
+            window.location.href = './page7.html'
+        }
+
+    </script>
+</body>
+
+</html>

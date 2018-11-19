@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/5.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="javascript:void(0);" id="back">
+                <img src="img/2-return.png" alt="返回">
+            </a>
+            <div class="title">身份确认</div>
+        </div>
+        <div class="container">
+            <div class="attention">
+                <div class="tip-title">请核对自动识别结果，如有误请手动调整</div>
+                <div class="imput-form first">
+                    <ul class="form-item">
+                        <li>
+                            <label for="name">姓名</label>
+                            <input value="罗远景" id="name">
+                        </li>
+                        <li>
+                            <label for="sfz">身份证号</label>
+                            <input value="420821199206305032" id="sfz">
+                        </li>
+                    </ul>
+                    <button>
+                        <img width=24 height=22 src="img/身份确认-拍照_03.png" alt="">
+                        <div>
+                            <a href="">重新拍照</a>
+                        </div>
+                    </button>
+                </div>
+                <div class="imput-form">
+                    <ul class="form-item">
+                        <li>
+                            <label for="name">签发机关</label>
+                            <input value="湖北省京山县" id="name">
+                        </li>
+                        <li>
+                            <label for="sfz">有效期</label>
+                            <input value="2017.02.03-2027.02.03" id="sfz">
+                        </li>
+                    </ul>
+                    <button>
+                        <img width=24 height=22 src="img/身份确认-拍照_03.png" alt="">
+                        <div>
+                            <a href="">重新拍照</a>
+                        </div>
+                    </button>
+                </div>
+                <div class="tips">
+                    <span class="zhanwei"></span>
+                    <span class="icon"></span>
+                    <span>&nbsp;仅用于全国公民身份查询中心核实身份</span>
+                </div>
+            </div>
+            <div class="footer">
+                <button class="queding" id="nextstep">下一步</button>
+                <div>注册流程</div>
+                <div class="process">
+                    <!-- <li class="item">
+                        <img src="img/身份信息-选中1_03.png" alt="">
+                        <span>
+                            <a href="">绑定银行卡</a>
+                        </span>
+                    </li>
+                    <li class="item arrow arrow-first"></li>
+                    <li class="item">
+                        <img src="img/身份确认-选中_03.png" alt="">
+                        <span>
+                            <a href="">录入身份证</a>
+                        </span>
+                    </li>
+                    <li class="item arrow arrow-first"></li> -->
+                    <li class="item">
+                        <img src="img/2-edit.png" alt="">
+                        <span>身份确认/修改</span>
+                    </li>
+                    <li class="item arrow"></li>
+                    <li class="item">
+                        <img src="img/2-reappearance.png" alt="">
+                        <span>返现银行卡</span>
+                    </li>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="tip">
+            <!-- <div class="header">提示</div> -->
+            <div class="content">
+                <div class="backcontent">两步即可完成注册认证领取现金返现哦~</div>
+                <div class="nextcontent">
+                    <div class="line1">身份认证有误将会影响评审结果，请确认</div>
+                    <div class="line2">罗远景</div>
+                    <div class="line3">420821199206305032</div>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="cancel">返回修改</button>
+                <button id="goon">
+                    <a href="./page1.html">确认无误</a>
+                    <a href="./page6.html">确认无误</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var nextstep = document.getElementById("nextstep");
+        var modal = document.querySelector(".modal");
+        var close = document.getElementById("cancel");
+        var goon = document.getElementById("goon");
+        var back = document.getElementById("back");
+        var backcontent = document.querySelector(".backcontent");
+        var nextcontent = document.querySelector(".nextcontent");
+        back.onclick = function () {
+            modal.classList.remove("show")
+            nextcontent.classList.remove("contentshow")
+            backcontent.classList.add("contentshow")
+            goon.querySelectorAll("a")[0].classList.add("contentshow")
+        }
+        close.onclick = function () {
+            modal.classList.add("show")
+            backcontent.classList.remove("contentshow")
+            nextcontent.classList.remove("contentshow")
+            goon.querySelectorAll("a")[0].classList.remove("contentshow")
+            goon.querySelectorAll("a")[1].classList.remove("contentshow")
+        }
+        goon.onclick = function () {
+
+        }
+        nextstep.onclick = function () {
+            modal.classList.remove("show")
+            nextcontent.classList.add("contentshow")
+            backcontent.classList.remove("contentshow")
+            goon.querySelectorAll("a")[1].classList.add("contentshow")
+        }
+
+    </script>
+</body>
+
+</html>

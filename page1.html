@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/1.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="tips">
+                你刚刚消费了
+            </div>
+            <div class="amount">
+                360.00元
+            </div>
+            <div class="detail">
+                <ul>
+                    <li>
+                        <span class="zhanwei"></span>
+                        <img src="img/1-time.png" alt="">
+                        <span>2018-11-15 17:51:33</span>
+                    </li>
+                    <li>
+                        <span class="zhanwei"></span>
+                        <img src="img/1-tickets.png" alt="">
+                        <span>18092201900446960</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="zhanwei"></span>
+                        <img src="img/1-address.png" alt="">
+                        <span>环秀晓筑自助餐厅</span>
+                    </li>
+                    <li>
+                        <span class="zhanwei"></span>
+                        <img src="img/1-lock.png" alt="">
+                        <span>479988</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <div class="title">
+                    恭喜您获得
+                </div>
+                <div class="amount">
+                    10-30元
+                </div>
+                <div class="explain">
+                    现金返现,还有消费额度的惊喜
+                </div>
+            </div>
+            <div class="content">
+                <div class="attention">输入手机号还可获得更多消费额度,开始申请吧!</div>
+                <div class="input-form">
+                    <button>
+                        <img src="img/1-phone.png" alt="">
+                    </button>
+                    <input type="text" placeholder="请输入本人常用手机号">
+                </div>
+
+                <button id="login">登陆注册</button>
+            </div>
+            <div class="footer">
+                <img src="img/1-flower.png" alt="">
+                <span class="">消费金融产品合作伙伴</span>
+            </div>
+        </div>
+        <div class="footer">
+            常见问题
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="tip">
+            <div class="title">
+                <div>验证手机号</div>
+                <div class="close" id="close"></div>
+            </div>
+            <div class="desc">
+                <div class="imput-form">
+                    <span>验证码</span>
+                    <input type="text" placeholder="请输入验证码">
+                    <button>
+                        <a href="">获取验证码</a>
+                    </button>
+                </div>
+                <div class="explain">
+                    收不到验证码?
+                    <a href="">更换手机号</a>
+                </div>
+                <button class="queding">确定</button>
+                <div class="footer-name">
+                    登录即代表同意
+                    <a href="">《服务许可协议》</a>
+                    <a href="">《隐私政策》</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById("login");
+        var modal = document.querySelector(".modal");
+        var close = document.getElementById("close");
+        var queding = document.querySelector(".queding");
+        btn.onclick = function () {
+            modal.classList.remove("show")
+
+        }
+        close.onclick = function () {
+            modal.classList.add("show")
+        }
+        queding.onclick = function () {
+            window.location.href = './page5.html'
+        }
+    </script>
+</body>
+
+</html>

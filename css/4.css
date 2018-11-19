@@ -1,0 +1,128 @@
+
+.wrapper>.header{
+    width: 100%;
+    height:44px;
+    background-color: rgba(58,58,58,1);
+    position: relative;
+}
+.wrapper>.header{
+    width: 100%;
+    height:12vw;
+    background-color: rgba(58,58,58,1);
+    position: relative;
+}
+.wrapper>.header>.title{
+    line-height:12vw;
+    width:100%;
+    font-size:4.8vw;
+    font-weight:bold;
+    text-align: center;
+    color:rgba(255,255,255,1);
+}
+.wrapper>.header>a{
+    position: absolute;
+    top:50%;
+    margin-top:-2.6vw;
+    width:100%;
+    padding-left: 5vw;
+    box-sizing: border-box;
+}
+.wrapper>.header>a>img{
+    width:2vw;
+    height:4.8vw;
+}
+.wrapper>.container{
+    background: #fff;
+}
+.wrapper>.container>.attention{
+    width: 259px;
+    
+    margin:0 auto;
+    font-size:3.2vw;
+    line-height: 13vw;
+    padding-left: 3vw;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    
+}
+.wrapper>.container>.attention>.sfz1{
+    width:100%;
+    height:157px;
+    background: url(../img/身份信息-1_03.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-bottom:20px;
+}
+.wrapper>.container>.attention>.sfz2{
+    width:100%;
+    height:157px;
+    background: url(../img/身份信息-1_03.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.wrapper>.container>.attention>.tips{
+    vertical-align: top;
+}
+.wrapper>.container>.attention>.tips>.icon{
+    display: inline-block;
+    font-size:0;
+    width:12px;
+    height:12px;
+    background: url(../img/3_03.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.container>.footer>.queding{
+    margin:0 auto;
+    font-size:14px;
+    width:90%;
+    height:50px;
+    border-radius:25px;
+    border: none;
+    outline: none;
+    color:#fff; 
+    background: -webkit-linear-gradient(left, #189BFB , #41D0F0); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #189BFB, #41D0F0); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #189BFB, #41D0F0); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #189BFB , #41D0F0); /* 标准的语法（必须放在最后） */
+}
+.container>.footer{
+    font-size: 3.2vw;
+    line-height:56px;
+    color:#999999;
+    text-align:center;
+    background:rgba(247,246,252,1);
+}
+.container>.footer>.tips{
+    padding-left:5vw;
+    text-align:left;
+}
+.container>.footer>.process{
+    display: flex;
+    justify-content: space-around;
+    padding:0 5vw;
+}
+.container>.footer>.process>li.item{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center
+}
+.container>.footer>.process>li.arrow{
+    width:8px;
+    height:7.2vw;
+    background: url(../img/绑定银行卡-下一步_03.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.container>.footer>.process>li.arrow-first{
+    background: url(../img/选中-下一步_03.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.container>.footer>.process>li.item>img{
+    width:7.2vw;
+    height:7.2vw;
+}
+.container>.footer>.process>li.item>span{
+    font-size:2.5vw;
+    font-weight:500;
+    color:rgba(164,164,164,1);
+}
