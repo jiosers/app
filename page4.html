@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/4.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="#" id="back">
+                <img src="img/2-return.png" alt="返回">
+            </a>
+            <div class="title">身份信息</div>
+        </div>
+        <div class="container">
+            <div class="attention">拍摄确保
+                <a href="">边框完整、字迹清</a>
+                <div class="sfz1"></div>
+                <div class="sfz2"></div>
+                <div class="tips">
+                    <span class="zhanwei"></span>
+                    <span class="icon"></span>
+                    <span>&nbsp;仅用于全国公民身份查询中心核实身份</span>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="tips">身份证拍摄遇到问题?
+                    <a href="">查看帮助</a>
+                </div>
+                <button class="queding" id="nextstep">下一步</button>
+                <div>注册流程</div>
+                <div class="process">
+                    <li class="item">
+                        <img src="img/身份信息-选中1_03.png" alt="">
+                        <span>
+                            <a href="">绑定银行卡</a>
+                        </span>
+                    </li>
+                    <li class="item arrow arrow-first"></li>
+                    <li class="item">
+                        <img src="img/2-lock.png" alt="">
+                        <span>录入身份证</span>
+                    </li>
+                    <li class="item arrow"></li>
+                    <li class="item">
+                        <img src="img/2-edit.png" alt="">
+                        <span>身份确认/修改</span>
+                    </li>
+                    <li class="item arrow"></li>
+                    <li class="item">
+                        <img src="img/2-reappearance.png" alt="">
+                        <span>返现银行卡</span>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="tip">
+            <div class="content">
+                <div class="backcontent">两步即可完成注册认证领取现金返现哦~</div>
+                <div class="nextcontent">
+                    <div class="line1">身份认证有误将会影响评审结果，请确认</div>
+                    <div class="line2">罗远景</div>
+                    <div class="line3">420821199206305032</div>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="cancel">返回修改</button>
+                <button id="goon">
+                    <a href="./page1.html">继续注册</a>
+                    <a href="./page7-1.html">确认无误</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var nextstep = document.getElementById("nextstep");
+        var modal = document.querySelector(".modal");
+        var nextcontent = document.querySelector(".nextcontent");
+        var backcontent = document.querySelector(".backcontent");
+        var goon = document.getElementById("goon");
+        var close = document.getElementById("cancel");
+        var back = document.getElementById("back");
+        nextstep.onclick = function () {
+            modal.classList.remove("show")
+            nextcontent.classList.add("contentshow")
+            backcontent.classList.remove("contentshow")
+            goon.querySelectorAll("a")[1].classList.add("contentshow")
+        }
+        close.onclick = function () {
+            modal.classList.add("show")
+            backcontent.classList.remove("contentshow")
+            nextcontent.classList.remove("contentshow")
+            goon.querySelectorAll("a")[0].classList.remove("contentshow")
+            goon.querySelectorAll("a")[1].classList.remove("contentshow")
+            close.innerText="返回修改";
+        }
+        back.onclick = function () {
+            modal.classList.remove("show")
+            nextcontent.classList.remove("contentshow")
+            backcontent.classList.add("contentshow")
+            close.innerText="暂不注册";
+            goon.querySelectorAll("a")[0].classList.add("contentshow")
+        }
+    </script>
+</body>
+
+</html>

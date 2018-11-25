@@ -13,60 +13,28 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <div class="tips">
-                你刚刚消费了
+            <div class="tips1">
+                <a href="#" id="rules">活动规则</a> 
             </div>
-            <div class="amount">
-                360.00元
-            </div>
-            <div class="detail">
-                <ul>
-                    <li>
-                        <span class="zhanwei"></span>
-                        <img src="img/1-time.png" alt="">
-                        <span>2018-11-15 17:51:33</span>
-                    </li>
-                    <li>
-                        <span class="zhanwei"></span>
-                        <img src="img/1-tickets.png" alt="">
-                        <span>18092201900446960</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <span class="zhanwei"></span>
-                        <img src="img/1-address.png" alt="">
-                        <span>环秀晓筑自助餐厅</span>
-                    </li>
-                    <li>
-                        <span class="zhanwei"></span>
-                        <img src="img/1-lock.png" alt="">
-                        <span>479988</span>
-                    </li>
-                </ul>
+            <div class="tips2">
+                恭喜你获得最高<span class="flag">30元</span>现金返现的申请机会，可提现银行卡，还有消费额度的惊喜
             </div>
         </div>
         <div class="container">
-            <div class="header">
-                <div class="title">
-                    恭喜您获得
-                </div>
-                <div class="amount">
-                    10-30元
-                </div>
-                <div class="explain">
-                    现金返现,还有消费额度的惊喜
-                </div>
-            </div>
+            <div class="attention">输入手机号还可获得更多消费额度,开始申请吧!</div>
             <div class="content">
-                <div class="attention">输入手机号还可获得更多消费额度,开始申请吧!</div>
                 <div class="input-form">
                     <button>
-                        <img src="img/1-phone.png" alt="">
+                        <img src="img/1-2.png" alt="" style="width:4.3vw;height:3.2vw ;">
+                    </button>
+                    <input type="text" placeholder="请输入提现银行卡(仅支持储蓄卡)">
+                </div>
+                <div class="input-form">
+                    <button>
+                        <img src="img/1-phone.png" alt="" style="width:3.2vw;height:4.4vw ;">
                     </button>
                     <input type="text" placeholder="请输入本人常用手机号">
                 </div>
-
                 <button id="login">登陆注册</button>
             </div>
             <div class="footer">
@@ -96,12 +64,40 @@
                     收不到验证码?
                     <a href="">更换手机号</a>
                 </div>
-                <button class="queding">确定</button>
-                <div class="footer-name">
-                    登录即代表同意
+                <div class="detail">
+                   * 本活动由合作公司“小花钱包”提供领取红包资格评估服务，需要提供您的实名认证信息进行审核
+                </div>
+                <div class="detail" style="margin-top:5px;">
+                    <span class="ckImg"></span>
+                    <a href="">《服用户授权协议》</a>
                     <a href="">《服务许可协议》</a>
                     <a href="">《隐私政策》</a>
                 </div>
+                <button class="queding">确定</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal2 show">
+        <div class="tip">
+            <div class="title">
+                <div>活动规则</div>
+            </div>
+            <div class="desc">
+                <div class="panel">
+                    <a href="">1.参入活动</a>
+                    <p>通过本活动页面注册并实名认证成功。</p>
+                </div>
+                <div class="panel">
+                    <a href="">2.活动方式</a>
+                    <p>活动期间实名认证成功，由“快易买”合作方“小花钱包”进行红包发放资质审核，审核成功即可领取最高的30元现金返现</p>
+                </div>
+                <div class="panel">
+                    <a href="">3.提取方式</a>
+                    <p>关注“快易买微信公众号，我们将在两个工作日将内将返现打入到你的银行卡</p>
+                </div>
+            </div>
+            <div class="footer" id="confirm">
+                知道了
             </div>
         </div>
     </div>
@@ -110,6 +106,10 @@
         var modal = document.querySelector(".modal");
         var close = document.getElementById("close");
         var queding = document.querySelector(".queding");
+        var rules=document.getElementById("rules")
+        var modal2=document.querySelector(".modal2")
+        var confirm = document.getElementById("confirm");
+        var ckImg=document.querySelector(".ckImg")
         btn.onclick = function () {
             modal.classList.remove("show")
 
@@ -118,7 +118,21 @@
             modal.classList.add("show")
         }
         queding.onclick = function () {
-            window.location.href = './page5.html'
+            window.location.href = './page4.html'
+        }
+
+        rules.onclick=function(){
+            modal2.classList.remove("show") 
+        }
+        confirm.onclick=function(){
+            modal2.classList.add("show")
+        }
+        ckImg.onclick=function(){
+            if(ckImg.classList.contains("ckImg1")){
+                ckImg.classList.remove("ckImg1")
+            }else{
+                ckImg.classList.add("ckImg1")
+            }           
         }
     </script>
 </body>

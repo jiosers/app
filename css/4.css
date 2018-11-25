@@ -126,3 +126,71 @@
     font-weight:500;
     color:rgba(164,164,164,1);
 }
+.modal.show{
+    transform: translateX(-100%);
+}
+.modal{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+}
+.modal>.tip{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-150px;
+    margin-top:-75px;
+    width:300px;
+    height:150px;
+    background:rgba(255,255,255,1);
+    border-radius:5px;
+}
+.modal>.tip>.header{
+    text-align:center;
+    font-size:17px;
+    padding:20px 0;
+}
+.modal>.tip>.content{
+    width:90%;
+    margin:20px auto 0;
+    font-size:14px;
+    line-height:28px;
+    text-align:center;
+}
+.modal>.tip>.content>.backcontent{
+    padding-top:20px;
+    display:none;
+}
+.modal>.tip>.content>.nextcontent{
+    display:none;
+}
+.modal>.tip>.content>.contentshow{
+    display: block;
+}
+.modal>.tip>.btn>#goon>a{
+    display:none;
+}
+.modal>.tip>.btn>#goon>.contentshow{
+    display: block;
+}
+.modal>.tip>.btn{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    display:flex;
+    font-size:14px;
+}
+.modal>.tip>.btn>button{
+    width:50%;
+    line-height:45px;
+    font-size:14px;
+    border:none;
+    background:none;
+    border-top:1px solid #E3E3E3;
+}
+.modal>.tip>.btn>button:first-of-type{
+    border-right:1px solid #E3E3E3;
+}
