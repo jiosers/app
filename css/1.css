@@ -130,6 +130,7 @@
     border: none;
     outline: none;
     box-sizing: border-box;
+    vertical-align: middle;
 }
 .wrapper>.container>.content>.input-form>input{
     flex: 1;
@@ -139,7 +140,8 @@
     background:rgba(247,246,252,1);
     border: none;
     box-sizing: border-box;
-    outline: none
+    outline: none;
+    vertical-align: middle;
 }
 .wrapper>.container>.content>.input-form>input:focus{
     border: none
