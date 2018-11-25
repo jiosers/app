@@ -35,8 +35,8 @@
 .wrapper>.container>.attention>.img-wrap{
     width:100vw;
     height:0;
-    padding-top:100vw;
-    background: url(../img/认证结果-1_03.png) no-repeat center center;
+    padding-top: 52.7vw;
+    background: url(../img/2-认证失败-1.png) no-repeat center 20%;
     background-size:50% 50%;
 }
 .wrapper>.container>.attention>.tips{
@@ -49,6 +49,7 @@
     color:#febc59;
     line-height:20px;
     margin:0;
+    font-size: 4vw;
 }
 .wrapper>.container>.attention>.tips>.title{
     font-size:22px;

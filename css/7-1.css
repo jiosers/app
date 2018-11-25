@@ -48,6 +48,7 @@
 .wrapper>.container>.attention>.tips>p{
     color:#189CFB;
     line-height:20px;
+    font-size: 4vw;
     margin:0;
 }
 .wrapper>.container>.attention>.tips>.title{

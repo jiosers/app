@@ -33,7 +33,7 @@
     height: 52.7vw;
     background-image: url(../img/6-认证失败-1.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 35%;
     background-size:50% 50%;
     position: relative;
 }
@@ -46,8 +46,7 @@
 }
 .wrapper>.container>.attention>.tips>p{
     line-height:5.4vw;
-    font-size: 3.7vw;
-    font-size:4.8vw;
+    font-size: 4vw;
     line-height:40px;
     font-weight: normal;
     color: #fdb956;
