@@ -73,7 +73,7 @@
 .container>.footer>.queding{
     margin:0 auto;
     font-size:14px;
-    width:90%;
+    width:92vw;
     height:50px;
     border-radius:25px;
     border: none;
@@ -92,7 +92,7 @@
     background:rgba(247,246,252,1);
 }
 .container>.footer>.tips{
-    padding-left:5vw;
+    padding-left:4vw;
     text-align:left;
 }
 .container>.footer>.process{
