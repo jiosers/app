@@ -116,7 +116,7 @@
     color:#999999;
     text-align:center;
     background:rgba(247,246,252,1);
-    margin-top:5.6vw; 
+    /* margin-top:5.6vw;  */
     position: relative;
 }
 .container>.btn>img{
