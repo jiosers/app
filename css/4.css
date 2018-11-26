@@ -162,6 +162,7 @@
 }
 .modal>.tip>.content>.backcontent{
     padding-top:20px;
+    font-weight: 400;
     display:none;
 }
 .modal>.tip>.content>.nextcontent{
