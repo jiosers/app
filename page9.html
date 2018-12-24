@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/9.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="tips1">
+                <a href="#" id="rules">申请规则</a> 
+            </div>
+            <div class="tips2">
+                会员账号：13833883388
+            </div>
+            <div class="tips3">
+               支付手续完成!
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="attention" style="color:#363636"><img src="./img/提示-1.png" alt="">&nbsp;&nbsp;必须关注<span style="color:#f78354">“快易买”</span>公众号,才能完成分期申请哦</div>
+                <div style="border:1px solid #e6f0f6;position: relative ;height: 33.6vw;margin-top:4vw;display:flex">
+                    <img src="./img/logo.png" style="width: 10vw;position:absolute;top: -5vw;left: 5vw;" alt="">
+                    <div style="width: 65%">
+                        <p style="padding-left:5vw;padding-top:5vw;font-size: 3.5vw">快易买</p>
+                        <p style="padding-left:5vw;color:rgba(54,54,54,1);font-size: 2.8vw">一点借贷,实时支付。<br> 轻松下单,随心购买。</p>
+                    </div>
+                    <div style="width: 35%">
+                        <img src="./img/图层-8.png" alt="" style="width:80%;margin-top: 5%;margin-right:5% ">
+                        <div style="font-weight:400;color:rgba(1,1,1,1);line-height:8vw;font-size:2vw;">（长按二维码识别关注我们）</div>
+                    </div>                  
+                </div>
+            </div>
+            <!-- <div class="footer">
+                <img src="img/1-flower.png" alt="">
+                <span class="">消费金融产品合作伙伴</span>
+            </div> -->
+        </div>
+        <div class="footer">
+            <img src="./img/logo.png" alt=""><br>
+            <span>快易买</span>
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="tip">
+            <div class="title">
+                <div>验证手机号</div>
+                <div class="close" id="close"></div>
+            </div>
+            <div class="desc">
+                <div class="imput-form">
+                    <span>验证码</span>
+                    <input type="text" placeholder="请输入验证码">
+                    <button>
+                        <a href="#">获取验证码</a>
+                    </button>
+                </div>
+                <div class="explain">
+                    收不到验证码?
+                    <a href="#">更换手机号</a>
+                </div>
+                <!-- <div class="message">
+                   本活动由合作公司“小花钱包”提供领取红包资格评估服务，需要提供您的实名认证信息进行审核
+                </div> -->
+                <div class="detail" style="margin-top:5px;">
+                    <span class="ckImg"></span>
+                    <a href="#">《服用户授权协议》</a>
+                    <a href="#">《服务许可协议》</a>
+                    <a href="#">《隐私政策》</a>
+                </div>
+                <button class="queding">确定</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal2 show">
+        <div class="tip" style="margin-top:-30vh;">
+            <div class="title">
+                <div>申请规则</div>
+            </div>
+            <div class="desc">
+                <div class="panel">
+                    <a href="#">1.申请条件</a>
+                    <p>通过本活动页面注册并实名认证成功。</p>
+                </div>
+                <div class="panel">
+                    <a href="#">2.申请方式</a>
+                    <p>完成身份认证之后，系统会自动为您推荐分期产品，点击
+                            确认申请，完成申请。分期产品由“快易买”合作方 “苏州
+                            汇达” 提供。消费用户完成注册认证并提交分期付款的购
+                            买申请,且该申请经商户审核通过并办理手续后，系统将自
+                            动向消费用户发送《债权转让通知书》，消费用户确认收
+                            到后即可离开消费场所。
+                    </p>
+                </div>
+                <div class="panel">
+                    <a href="#">3.到账方式</a>
+                    <p>审核成功；并完成确认申请的用户，在商户即时收到收款
+                        通知时，用户即可离开。“快易买”合作方“苏州汇达”会在
+                        30分钟内支付货款到商户。
+                    </p>
+                </div>
+                <div class="panel">
+                    <a href="#">3.提取方式</a>
+                    <p>关注“快易买微信公众号，我们将在两个工作日将内将返现打入到你的银行卡。</p>
+                </div>
+            </div>
+            <div class="footer" id="confirm">
+                知道了
+            </div>
+        </div>
+    </div>
+    <script>
+        // var btn = document.getElementById("login");
+        var modal = document.querySelector(".modal");
+        var close = document.getElementById("close");
+        var queding = document.querySelector(".queding");
+        var rules=document.getElementById("rules")
+        var modal2=document.querySelector(".modal2")
+        var confirm = document.getElementById("confirm");
+        var ckImg=document.querySelector(".ckImg")
+        // btn.onclick = function () {
+        //     modal.classList.remove("show")
+
+        // }
+        close.onclick = function () {
+            modal.classList.add("show")
+        }
+        queding.onclick = function () {
+            window.location.href = './page4.html'
+        }
+
+        rules.onclick=function(){
+            modal2.classList.remove("show") 
+        }
+        confirm.onclick=function(){
+            modal2.classList.add("show")
+        }
+        ckImg.onclick=function(){
+            if(ckImg.classList.contains("ckImg1")){
+                ckImg.classList.remove("ckImg1")
+            }else{
+                ckImg.classList.add("ckImg1")
+            }           
+        }
+    </script>
+</body>
+
+</html>

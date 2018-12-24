@@ -96,7 +96,7 @@
 .wrapper>.container>.attention>.imput-form>.form-item>li{
     display:flex;
     width:100%;
-    height:50px;
+    height:10.7vw;
     font-size:14px;
     box-sizing: border-box;
     color:#363636;
@@ -115,6 +115,7 @@
     font-size:14px;
     display: inline-block;
     line-height:10.7vw;
+    color: #999999
 }
 .wrapper>.container>.attention>.imput-form>.form-item>li>input{
     flex:1;
@@ -167,7 +168,7 @@
     background:rgba(255,255,255,1);
 }
 .container>.footer>.queding{
-    margin:20px auto 0;
+    margin:5px auto 0;
     font-size:14px;
     width:90%;
     height:50px;
