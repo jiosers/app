@@ -1,7 +1,8 @@
 .wrapper{
     
     height:100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     background:rgba(247,246,252,1);
 }
 .wrapper>.header{
@@ -59,8 +60,8 @@
 .wrapper>.container>.footer>.tip-item{
     text-align: left;
     padding-left: 3vw;
-    height:10vw;
-    line-height:10vw;
+    height:12vw;
+    line-height:12vw;
 }
 .wrapper>.container>.footer>.tip-item>.icon{
     display: inline-block;
@@ -86,7 +87,7 @@
 .wrapper>.container>.attention>.imput-form .form-item{
     padding:0;
     margin:0;
-    height:10.7vw;
+    height:13.4vw;
     box-sizing: border-box;
 }
 .wrapper>.container>.attention>.imput-form .form-item{
@@ -96,11 +97,11 @@
 .wrapper>.container>.attention>.imput-form>.form-item>li{
     display:flex;
     width:100%;
-    height:10.7vw;
+    height:13.4vw;
     font-size:14px;
     box-sizing: border-box;
     color:#363636;
-    line-height: 10.7vw;
+    line-height: 13.4vw;
 }
 .wrapper>.container>.attention>.imput-form>.form-item>li>span>input{
     width:100%;
@@ -114,7 +115,7 @@
     width:80px;
     font-size:14px;
     display: inline-block;
-    line-height:10.7vw;
+    line-height:13.4vw;
     color: #999999
 }
 .wrapper>.container>.attention>.imput-form>.form-item>li>input{

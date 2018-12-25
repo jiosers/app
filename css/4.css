@@ -144,9 +144,9 @@
     margin-left:-150px;
     margin-top:-75px;
     width:300px;
-    height:150px;
+    height:170px;
     background:rgba(255,255,255,1);
-    border-radius:5px;
+    border-radius:6px;
 }
 .modal>.tip>.header{
     text-align:center;

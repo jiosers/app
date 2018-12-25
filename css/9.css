@@ -50,7 +50,7 @@
     width: 100%;   
     font-size:4vw;
     color:#9cf2ff;
-    top:60%;
+    top:70%;
     padding-left: 10vw;
     padding-right:10vw;
     box-sizing:border-box; 
@@ -60,8 +60,8 @@
     position: absolute;
     width: 100%;   
     font-size:3.2vw;
-    color:#FFFFFF;
-    top:50%;
+    color:rgba(255,255,255,1);
+    top:60%;
     padding-left: 10vw;
     padding-right:10vw;
     box-sizing:border-box; 
@@ -126,7 +126,7 @@
 }
 .wrapper>.container>.content{
     margin-top: 6vw;
-    height: 55vw;
+    height: 57vw;
     background:rgba(255,255,255,1);
     box-shadow:0px 3px 79px 0px rgba(32,165,249,0.27);
     padding:0 5.4vw 0vw;
@@ -185,7 +185,7 @@
     outline: none
 }
 .wrapper>.container>.footer{
-    margin-top: 4.8vw;
+    margin-top: 4.5vw;
     display: flex;
     align-items: center
 
@@ -196,13 +196,17 @@
     width: 29.4vw;
 }
 .wrapper>.container>.footer>span{
-    margin-left:3.2vw;
-    height:4vw;
-    font-size:3.2vw;
+    margin-left:5vw;
+    height:3.5vw;
+    font-size:2.9vw;
     font-weight:500;
     color:rgba(153,153,153,1);
 }
-
+.wrapper>.container>.footer>a{
+    height:3.5vw;
+    font-size:2.9vw;
+    font-weight:500;
+}
 .modal.show,.modal2.show{
     transform: translateX(-100%)
 }

@@ -206,7 +206,7 @@
     background:rgba(0,0,0,0.7);
 }
 .modal{
-    height:90vh;
+    height:100vh;
 }
 .modal>.tip,.modal2>.tip{
     position: absolute;
@@ -216,7 +216,7 @@
     margin-top:-30vw;
     width:90vw;
     background:rgba(255,255,255,1);
-    border-radius:5px;
+    border-radius:6px;
     overflow: hidden;
 }
 .modal>.tip>.title,.modal2>.tip>.title{
@@ -242,7 +242,7 @@
     flex:0 0 80px;
     background:transparent;
     text-align: center;
-    font-size: 14px;
+    font-size: 4vw;
 }
 .modal>.tip>.desc>.imput-form>input{
     width:calc(100% - 160px);
@@ -251,6 +251,7 @@
     background:transparent;
     border:none;
     outline: none;
+    font-size: 4vw
 }
 .modal>.tip>.desc>.imput-form>button{
     width:100px;
@@ -288,16 +289,19 @@
 .modal>.tip>.desc>.detail>.ckImg1{
     background-image: url(../img/2-3.png)
 }
+.modal>.tip>.desc>.detail>span,.modal>.tip>.desc>.detail>a{
+    font-size:3.5vw; 
+}
 .modal>.tip>.desc>.queding{
     width:100%;
     height: 50px;
     border-radius: 25px;
-    margin-top: 10px;
     border: none;
     outline: none;
     color: #fff;
     background: rgba(229,229,237,1);
-    margin-bottom:20px; 
+    font-size: 4.3vw
+    /* margin-bottom:20px;  */
 }
 .modal>.tip>.desc>.footer-name{
     font-size:12px;
@@ -391,3 +395,4 @@
     margin-top: 20px;
     color: #E3E3E3
 }
+
