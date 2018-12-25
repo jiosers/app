@@ -25,7 +25,7 @@
     text-align: center
 }
 .wrapper>.footer>img{
-    width: 10vw;
+    width: 8vw;
 }
 .wrapper>.footer>span{
     color: #333333;
@@ -50,7 +50,7 @@
     width: 100%;   
     font-size:4vw;
     color:#9cf2ff;
-    top:50%;
+    top:55%;
     padding-left: 10vw;
     padding-right:10vw;
     box-sizing:border-box; 
@@ -150,13 +150,14 @@
 .wrapper>.container>.content>.input-form>input{
     flex: 1;
     height: 13vw;
-    line-height: 15vw;
+    line-height: 13vw;
     font-weight: normal;
     background:rgba(247,246,252,1);
     border: none;
     box-sizing: border-box;
     outline: none;
     vertical-align: middle;
+    font-size: 3.8vw
 }
 .wrapper>.container>.content>.input-form>input:focus{
     border: none
