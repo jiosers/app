@@ -78,7 +78,7 @@
     align-items: center;
     background:rgba(255,255,255,1);
     overflow: hidden;
-    padding-left:3vw;
+    padding-left:4vw;
     font-size:14px;
     
 }
@@ -231,5 +231,5 @@
 .input-img>img{
     vertical-align: middle;
     height: 4vw;
-    margin-right: 2vw;
+    margin-right: 4vw;
 }
