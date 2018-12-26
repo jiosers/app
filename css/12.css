@@ -5,17 +5,13 @@
     height:auto;
     min-height: 100vh;
     box-sizing: border-box;
+    background-color:  rgba(255,255,255,1);
 }
 .wrapper>.header{
     width: 100%;
-    height:64vw;
-    background-size: 100% 100%;
-    background-image:url('../img/1-top.png');
+    height:12vw;
+    background-color: rgba(58,58,58,1);
     position: relative;
-}
-.wrapper>.container{
-    margin-top: -10px;
-    padding:0 5.3vw;
 }
 .wrapper>.footer{
     position:absolute;
@@ -25,7 +21,7 @@
     text-align: center
 }
 .wrapper>.footer>img{
-    width: 10vw;
+    width: 8vw;
 }
 .wrapper>.footer>span{
     color: #333333;
@@ -33,35 +29,47 @@
     font-weight:500;
 }
 .wrapper>.header>.tips1{
-    text-align: right;
-    position: absolute;
+    text-align: center;
+    margin-left: 4vw;
+    position: relative;
     width: 100%;   
-    padding-right:4vw; 
     padding-top:4vw; 
     box-sizing:border-box;
 }
-.wrapper>.header>.tips1>a{
-    font-size:4vw;
-    color:#e4f8fd;
+.wrapper>.header>.tips1>span{
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    font-size: 4.8vw
 }
-.wrapper>.header>.tips3{
-    text-align: center;
+.wrapper>.header>.tips1>a>img{
+    width:2vw;
+    height:4.8vw;
+    vertical-align: middle
+}
+.wrapper>.header>.tips1>a{
     position: absolute;
-    width: 100%;   
-    font-size:4vw;
-    color:#9cf2ff;
-    top:70%;
-    padding-left: 10vw;
-    padding-right:10vw;
-    box-sizing:border-box; 
+    left: 1vw;
+
 }
 .wrapper>.header>.tips2{
     text-align: center;
     position: absolute;
     width: 100%;   
-    font-size:3.2vw;
+    font-size:4vw;
+    color:#9cf2ff;
+    top:45%;
+    padding-left: 10vw;
+    padding-right:10vw;
+    box-sizing:border-box; 
+}
+.wrapper>.header>.tips3{
+    text-align: center;
+    position: absolute;
+    width: 100%;   
+    font-size:8vw;
+    font-weight:bold;
     color:rgba(255,255,255,1);
-    top:60%;
+    top:65%;
     padding-left: 10vw;
     padding-right:10vw;
     box-sizing:border-box; 
@@ -126,7 +134,7 @@
 }
 .wrapper>.container>.content{
     margin-top: 6vw;
-    height: 57vw;
+    height: 50vw;
     background:rgba(255,255,255,1);
     box-shadow:0px 3px 79px 0px rgba(32,165,249,0.27);
     padding:0 5.4vw 0vw;
@@ -161,13 +169,14 @@
 .wrapper>.container>.content>.input-form>input{
     flex: 1;
     height: 13vw;
-    line-height: 15vw;
+    line-height: 13vw;
     font-weight: normal;
     background:rgba(247,246,252,1);
     border: none;
     box-sizing: border-box;
     outline: none;
     vertical-align: middle;
+    font-size: 3.8vw
 }
 .wrapper>.container>.content>.input-form>input:focus{
     border: none
@@ -185,7 +194,7 @@
     outline: none
 }
 .wrapper>.container>.footer{
-    margin-top: 4.5vw;
+    margin-top: 4.8vw;
     display: flex;
     align-items: center
 
@@ -196,17 +205,13 @@
     width: 29.4vw;
 }
 .wrapper>.container>.footer>span{
-    margin-left:5vw;
-    height:3.5vw;
-    font-size:2.5vw;
+    margin-left:3.2vw;
+    height:4vw;
+    font-size:3.2vw;
     font-weight:500;
     color:rgba(153,153,153,1);
 }
-.wrapper>.container>.footer>a{
-    height:3.5vw;
-    font-size:2.5vw;
-    font-weight:500;
-}
+
 .modal.show,.modal2.show{
     transform: translateX(-100%)
 }
@@ -220,7 +225,7 @@
     background:rgba(0,0,0,0.7);
 }
 .modal{
-    height:90vh;
+    height:100vh;
 }
 .modal>.tip,.modal2>.tip{
     position: absolute;
@@ -230,7 +235,7 @@
     margin-top:-30vw;
     width:90vw;
     background:rgba(255,255,255,1);
-    border-radius:5px;
+    border-radius:6px;
     overflow: hidden;
 }
 .modal>.tip>.title,.modal2>.tip>.title{
@@ -256,7 +261,7 @@
     flex:0 0 80px;
     background:transparent;
     text-align: center;
-    font-size: 14px;
+    font-size: 4vw;
 }
 .modal>.tip>.desc>.imput-form>input{
     width:calc(100% - 160px);
@@ -265,6 +270,7 @@
     background:transparent;
     border:none;
     outline: none;
+    font-size: 4vw
 }
 .modal>.tip>.desc>.imput-form>button{
     width:100px;
@@ -302,16 +308,19 @@
 .modal>.tip>.desc>.detail>.ckImg1{
     background-image: url(../img/2-3.png)
 }
+.modal>.tip>.desc>.detail>span,.modal>.tip>.desc>.detail>a{
+    font-size:3.5vw; 
+}
 .modal>.tip>.desc>.queding{
     width:100%;
     height: 50px;
     border-radius: 25px;
-    margin-top: 10px;
     border: none;
     outline: none;
     color: #fff;
     background: rgba(229,229,237,1);
-    margin-bottom:20px; 
+    font-size: 4.3vw
+    /* margin-bottom:20px;  */
 }
 .modal>.tip>.desc>.footer-name{
     font-size:12px;
@@ -405,3 +414,67 @@
     margin-top: 20px;
     color: #E3E3E3
 }
+.wrapper>.container{
+    background-color: rgba(247,246,252,1);
+}
+.tabs{
+    height: 13.4vw;
+    line-height: 13.4vw;
+    box-sizing: border-box;
+    border-bottom: #e3e3e3;
+    background-color: rgba(255,255,255,1);
+    display: flex;
+}
+.tabs>a{
+    box-sizing: border-box;
+    width: 50%;
+    display: block;
+    line-height: 13.4vw;
+    font-size: 4vw;
+    text-align: center
+}
+.tabs>a.active{
+    border-bottom: #1a9efa solid 2px;
+}
+.tab-container{
+    background-color:  rgba(255,255,255,1);
+    padding-left: 4vw;
+}
+.tab-forms{
+    height: 22vw;
+    background-color:  rgba(255,255,255,1);   
+    border-bottom:1px solid #e3e3e3;
+    display:flex 
+}
+.tab-forms>.form-right{
+    line-height: 22vw;
+    color:rgba(54,54,54,1);
+    text-align: right;
+    padding-right:4vw; 
+    flex: 1;
+    font-size: 5.4vw;
+    font-weight: 500
+}
+.tab-forms>.form-left>.item-top{
+    color:rgba(54,54,54,1);
+    margin-top:6vw;
+    flex: 1;
+    font-size: 4vw;
+    font-weight: 500
+}
+.tab-forms>.form-left>.item-bottom{
+    color:rgba(153,153,153,1);
+    flex: 1;
+    margin-top: 2vw;
+    font-size: 3.2vw;
+}
+.tab-forms>.form-left>.item-bottom{
+    color:rgba(153,153,153,1);
+    flex: 1;
+    margin-top: 2vw;
+    font-size: 3.2vw;
+}
+.tab-forms>.form-left>.item-top.span-active{
+    color:rgba(252,52,67,1);
+}
+

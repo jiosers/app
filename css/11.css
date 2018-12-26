@@ -430,3 +430,56 @@
     box-sizing: border-box;
     font-size: 4vw;
 }
+.tab-forms{
+    height: 28vw;
+    background-color:  rgba(255,255,255,1);
+    padding-left: 4vw;
+}
+.tab-forms>.form-item1{
+    height: 20vw;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e3e3e3;
+}
+.tab-forms>.form-item1>.item-top,.tab-forms>.form-item1>.item-bottom{
+    height: 50%;
+    box-sizing: border-box;
+    display: flex
+}
+.tab-forms>.form-item1>.item-top>.top-left{
+    font-size: 3.2vw;
+    color:rgba(153,153,153,1);
+    line-height: 10vw;
+}
+.tab-forms>.form-item1>.item-top>.top-right{
+    font-size: 3.5vw;
+    color:#363636;
+    text-align: right;
+    flex: 1;
+    padding-right: 4vw;
+    line-height: 10vw;
+}
+.tab-forms>.form-item1>.item-bottom>.bottom-left{
+    font-size: 6.4vw;
+    color:rgba(252,52,67,1);
+    line-height: 7vw;
+}
+.tab-forms>.form-item1>.item-bottom>.bottom-right{
+    font-size: 3.2vw;
+    color:rgba(153,153,153,1);
+    text-align: right;
+    flex: 1;
+    padding-right: 4vw;
+    line-height: 7vw;
+}
+
+.tab-forms>.form-item2{
+    height: 8vw;
+    box-sizing: border-box;
+}
+.tab-forms>.form-item2>span{
+    font-size: 3.2vw;
+    color: #999999
+}
+.span-active{
+    color: #FC3443
+}
