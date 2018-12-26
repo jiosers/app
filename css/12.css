@@ -26,18 +26,17 @@
 .wrapper>.footer>span{
     color: #333333;
     font-size:3.2vw;
-    font-weight:500;
 }
 .wrapper>.header>.tips1{
     text-align: center;
     margin-left: 4vw;
     position: relative;
     width: 100%;   
-    padding-top:4vw; 
+    height: 100%;
+    line-height: 12vw;
     box-sizing:border-box;
 }
 .wrapper>.header>.tips1>span{
-    font-weight:bold;
     color:rgba(255,255,255,1);
     font-size: 4.8vw
 }
@@ -67,7 +66,6 @@
     position: absolute;
     width: 100%;   
     font-size:8vw;
-    font-weight:bold;
     color:rgba(255,255,255,1);
     top:65%;
     padding-left: 10vw;
@@ -93,7 +91,6 @@
     line-height: 6vw;
     height:6vw;
     width:250px;
-    font-weight:500;
     list-style: none;
     color:rgba(162,245,255,1);
     vertical-align: middle;
@@ -116,7 +113,6 @@
 .wrapper>.container>.header>.title,.wrapper>.container>.header>.explain{
    text-align: center;
     font-size:3.8vw;;
-    font-weight:500;
     color:rgba(54,54,54,1);
     line-height:6vw;
 }
@@ -145,7 +141,6 @@
     color:#5cb7fb;
     height:13vw;
     line-height:13vw;
-    font-weight:500;
 }
 .wrapper>.container>.content>.attention>img{
     height:5vw;
@@ -208,7 +203,6 @@
     margin-left:3.2vw;
     height:4vw;
     font-size:3.2vw;
-    font-weight:500;
     color:rgba(153,153,153,1);
 }
 
@@ -431,36 +425,36 @@
     display: block;
     line-height: 13.4vw;
     font-size: 4vw;
-    text-align: center
+    text-align: center;
+    color:rgba(54,54,54,1)
 }
 .tabs>a.active{
     border-bottom: #1a9efa solid 2px;
+    color: #199CFB;
 }
 .tab-container{
     background-color:  rgba(255,255,255,1);
     padding-left: 4vw;
 }
 .tab-forms{
-    height: 22vw;
+    height: 18vw;
     background-color:  rgba(255,255,255,1);   
     border-bottom:1px solid #e3e3e3;
     display:flex 
 }
 .tab-forms>.form-right{
-    line-height: 22vw;
+    line-height: 18vw;
     color:rgba(54,54,54,1);
     text-align: right;
     padding-right:4vw; 
     flex: 1;
     font-size: 5.4vw;
-    font-weight: 500
 }
 .tab-forms>.form-left>.item-top{
     color:rgba(54,54,54,1);
-    margin-top:6vw;
+    margin-top:3.5vw;
     flex: 1;
     font-size: 4vw;
-    font-weight: 500
 }
 .tab-forms>.form-left>.item-bottom{
     color:rgba(153,153,153,1);
