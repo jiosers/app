@@ -30,7 +30,6 @@
 }
 .wrapper>.header>.tips1{
     text-align: center;
-    margin-left: 4vw;
     position: relative;
     width: 100%;   
     padding-top:4vw; 
@@ -48,7 +47,7 @@
 }
 .wrapper>.header>.tips1>a{
     position: absolute;
-    left: 1vw;
+    left: 5vw;
 
 }
 .wrapper>.header>.tips2{
