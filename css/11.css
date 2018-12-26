@@ -419,10 +419,11 @@
 }
 .tabs{
     height: 13.4vw;
-    line-height: 13.4vw;
+    line-height: 12.8vw;
     box-sizing: border-box;
     border-bottom: #e3e3e3;
-    background-color: rgba(255,255,255,1)
+    background-color: rgba(255,255,255,1);
+    border-bottom:1px solid #e3e3e3
 }
 .tabs>a{
     padding:4.2vw 4vw;
@@ -474,6 +475,7 @@
 
 .tab-forms>.form-item2{
     height: 8vw;
+    line-height: 7vw;
     box-sizing: border-box;
 }
 .tab-forms>.form-item2>span{
